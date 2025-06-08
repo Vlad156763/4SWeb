@@ -75,7 +75,7 @@
     color: #ffffffaf;
 }
 .search-icon {
-    align-self: right;
+    align-self: end;
 }
 
 hr, .color-fff {
