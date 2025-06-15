@@ -2,5 +2,5 @@
 *.class
 # бінарі файли з 3 лб
 /lab3/bin/
-#node_modules з 4 лб
-/lab4/node_modules/
+#node_modules з 4-5 лб
+node_modules/
