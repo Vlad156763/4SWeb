@@ -1,0 +1,12 @@
+
+.button_container {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.btn {
+  background-color: #ff6600;
+  border: none;
+  font-weight: bold;
+}
+
