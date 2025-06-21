@@ -4,3 +4,5 @@
 /lab3/bin/
 #node_modules з 4-5 лб
 node_modules/
+#ключі
+.env

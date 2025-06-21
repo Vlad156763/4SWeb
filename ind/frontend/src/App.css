@@ -1,0 +1,180 @@
+.App {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+}
+
+.SearchForm {
+    background-color: #3c3c9c;
+    color: #f0f0f0;
+    padding: 20px;
+    border-radius: 20px;
+    width: 450px;
+    height: fit-content;
+    display: grid;
+    position: fixed;
+    justify-self: center;
+    align-self: center;
+    padding: 20px; 
+    box-shadow: 4px 4px 8px #1c1c1c;
+}
+
+.SearchForm:hover {
+    background-color: #3c3c9c;
+}
+
+.SearchForm .label {
+    font-size: 32px;
+    color: #ee9b00;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.SearchForm .input {
+    height: 40px;
+    background-color: #ee9b00aa;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.SearchForm .input:focus, .SearchForm .button:focus {
+    outline: none;
+}
+
+.SearchForm .button {
+    background-color: #ee9b00aa;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #2c2c2c;
+    margin-top: 10px;
+}
+
+.SearchForm .button:hover {
+    background-color: #ee9b00;
+}
+
+.SearchForm .button:active {
+    background-color: #ee9b00aa;
+}
+.Footter {
+    position: relative;
+    justify-self: center;
+    align-self: end;
+    color: #7c7c7c;
+    padding: 20px;
+}
+
+.Footter .link:visited {
+    color: #7c7c7c;
+}
+
+
+.Msg {
+    position: fixed;
+    margin: 20px;
+    justify-self: end;
+    min-width: 300px;
+    max-width: 90vw;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    overflow: hidden;
+    color: #fff;
+}
+
+.msg-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.msg-close {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.msg-body {
+    padding: 12px 16px;
+    font-size: 14px;
+    background-color: inherit;
+}
+
+.Msg.error { background-color: #8b2c2c; }
+.Msg.warning { background-color: #a86d2d; }
+.Msg.done { background-color: #4f7942; }
+
+.Msg.error .msg-title::before { content: 'Помилка'; }
+.Msg.warning .msg-title::before { content: 'Попередження'; }
+.Msg.done .msg-title::before { content: 'Успіх'; }
+
+.gif {
+    position: fixed;
+    justify-self: center;
+    align-self: center;
+    height: 50px;
+}
+
+.Result {
+    position: fixed;
+    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: end;
+    bottom: 10%;
+    font-weight: bold;
+    color: #000000;
+    gap: 16px;
+}
+
+.Result-block {
+    background-color: #3C3C96; 
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px #1c1c1c;
+    padding: 12px 16px;
+    min-width: 150px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.Result-block:hover {
+    transform: scale(1.05);
+}
+
+.block-top {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.block-main {
+    background-color: #EE9B00; 
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.Result a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-height: 800px), (max-width: 900px) {
+    .SearchForm {
+        top: 10%;
+    }
+}
